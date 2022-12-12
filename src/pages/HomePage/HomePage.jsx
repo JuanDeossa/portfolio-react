@@ -4,8 +4,10 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { ImWhatsapp } from "react-icons/im";
 import { logos } from "../../assets/images";
+import { useState } from "react";
 
 export const HomePage = () => {
+  const [darkMode, setDarkMode] = useState(false)
   return (
     <div className="bg-white px-4 md:px-20 lg:px-40">
       <section className="min-h-screen">
