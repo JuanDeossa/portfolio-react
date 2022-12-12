@@ -7,9 +7,11 @@ import { logos } from "../../assets/images";
 import { useState } from "react";
 
 export const HomePage = () => {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(true);
   return (
-    <div className="bg-white px-4 md:px-20 lg:px-40">
+    <div
+      className={`bg-white px-4 md:px-20 lg:px-40 ${darkMode ? "dark" : ""}`}
+    >
       <section className="min-h-screen">
         <nav className="py-10 mb-12 flex justify-between">
           <h1 className="">developed by JR</h1>
